@@ -8,7 +8,7 @@ def hanoi_trace(n, start, mid, end):
     else:
         hanoi_trace(n - 1, start, end, mid)
         print("{}탑 -> {}탑".format(start, end))
-        hanoi_trace(n - 1, mid, end, start)
+        hanoi_trace(n - 1, mid, start, end)
 
 
 def hanoi(n):
@@ -20,6 +20,7 @@ def hanoi(n):
 
 
 num = int(input("원판의 개수를 입력하세요: "))
+print("A탑에서 C탑으로 옮기는 과정\n\n")
 hanoi_trace(num, "A", "B", "C")
 result = hanoi(num)
 

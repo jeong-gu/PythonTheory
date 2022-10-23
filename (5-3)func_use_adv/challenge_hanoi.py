@@ -20,7 +20,7 @@ def hanoi(n):
 
 
 num = int(input("원판의 개수를 입력하세요: "))
-print("A탑에서 C탑으로 옮기는 과정\n\n")
+print("A탑에서 C탑으로 옮기는 과정\n\n\n")
 hanoi_trace(num, "A", "B", "C")
 result = hanoi(num)
 

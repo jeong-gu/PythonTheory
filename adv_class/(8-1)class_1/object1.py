@@ -26,7 +26,7 @@ def get_avg(student):
 
 
 def get_info(student):
-    print(f'{student["name"]}\t{get_sum(student)}\t{get_avg(student)}')
+    print(f'{student["name"]}\t\t{get_sum(student)}\t\t{get_avg(student)}')
 
 
 def get_ran():
